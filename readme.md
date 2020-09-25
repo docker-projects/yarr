@@ -20,9 +20,9 @@ Support for 3rd-party applications (via Fever API) is being considered.
 
 
 
-## build
+## Crear contenedor (Docker)
 
-Install `Go >= 1.14` and `gcc`. Get the source code:
+Instala `Go >= 1.14` and `gcc`. Get the source code:
 
 ```sh
 git clone https://github.com/nkanaev/yarr.git
@@ -32,7 +32,7 @@ cd yarr
 ```
 
 Then:
-**build docker image**
+**docker build ** y crea la imagen
 
 ```
 docker create --name=yarr -p 7070:7070  ugeek/yarr:amd64
