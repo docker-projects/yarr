@@ -17,3 +17,23 @@ Support for 3rd-party applications (via Fever API) is being considered.
 ## credits
 
 [Feather](http://feathericons.com/) for icons.
+
+
+
+## build
+
+Install `Go >= 1.14` and `gcc`. Get the source code:
+
+```sh
+git clone https://github.com/nkanaev/yarr.git
+git clone https://github.com/nkanaev/gofeed.git
+mv gofeed yarr
+cd yarr
+```
+
+Then:
+**build docker image**
+
+```
+docker create --name=yarr -p 7070:7070  ugeek/yarr:amd64
+```
